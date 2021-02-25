@@ -1,0 +1,7 @@
+table tr td {
+  width: 10vw;
+  height: 10vh;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
