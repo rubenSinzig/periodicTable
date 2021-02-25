@@ -1,28 +1,42 @@
+body {
+  background-color: rgb(61, 61, 61);
+}
+table {
+  height: 45rem;
+  width: 75rem;
+  margin: auto;
+}
 table tr td {
-  width: 10vw;
-  height: 10vh;
-  background-color: black;
-  color: white;
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.5rem;
+  border: 0.075rem solid red;
+  background-color: rgb(41, 41, 41);
+  color: red;
   text-align: center;
   z-index: auto;
+  border-top-right-radius: 0.85rem;
+  transition: 0.5s;
 }
-tr:nth-child(1) :nth-child(n + 2):nth-child(-n + 17) {
-  background-color: transparent;
-}
-tr:nth-child(1) :nth-child(n + 2):nth-child(-n + 17) {
-  background-color: transparent;
-}
+tr:nth-child(1) :nth-child(n + 2):nth-child(-n + 17),
+tr:nth-child(1) :nth-child(n + 2):nth-child(-n + 17),
 tr:nth-child(2) :nth-child(n + 3):nth-child(-n + 12),
-tr:nth-child(3) :nth-child(n + 3):nth-child(-n + 12) {
-  background-color: transparent;
-}
+tr:nth-child(3) :nth-child(n + 3):nth-child(-n + 12),
 tr:nth-child(6) :nth-child(3),
-tr:nth-child(7) :nth-child(3) {
+tr:nth-child(7) :nth-child(3),
+tr:nth-last-child(3) :nth-child(n + 1):nth-child(-n + 18),
+tr:nth-last-child(2) :nth-last-child(1),
+tr:nth-last-child(1) :nth-last-child(1),
+tr:nth-last-child(2) :nth-child(n + 1):nth-child(-n + 2),
+tr:nth-last-child(1) :nth-child(n + 1):nth-child(-n + 2) {
   background-color: transparent;
+  border: none;
 }
-tr:nth-last-child(2) :nth-child(n + 16):nth-child(-n + 18),
-tr:nth-last-child(1) :nth-child(n + 16):nth-child(-n + 18),
-tr:nth-last-child(2) :nth-child(1),
-tr:nth-last-child(1) :nth-child(1) {
-  background-color: transparent;
+tr:nth-last-child(3) :nth-child(n + 1):nth-child(-n + 18) {
+  height: 0.25rem;
+}
+table tr td:hover {
+  transform: rotate(-90deg);
+  transform: scale(1.8);
+  z-index: 1;
 }
