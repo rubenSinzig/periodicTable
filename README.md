@@ -1,4 +1,4 @@
-# periodicTable
+# Periodic-Table
 
 Small App using HTML and CSS to make a Periodic-Table.
 
