@@ -4,4 +4,25 @@ table tr td {
   background-color: black;
   color: white;
   text-align: center;
+  z-index: auto;
+}
+tr:nth-child(1) :nth-child(n + 2):nth-child(-n + 17) {
+  background-color: transparent;
+}
+tr:nth-child(1) :nth-child(n + 2):nth-child(-n + 17) {
+  background-color: transparent;
+}
+tr:nth-child(2) :nth-child(n + 3):nth-child(-n + 12),
+tr:nth-child(3) :nth-child(n + 3):nth-child(-n + 12) {
+  background-color: transparent;
+}
+tr:nth-child(6) :nth-child(3),
+tr:nth-child(7) :nth-child(3) {
+  background-color: transparent;
+}
+tr:nth-last-child(2) :nth-child(n + 16):nth-child(-n + 18),
+tr:nth-last-child(1) :nth-child(n + 16):nth-child(-n + 18),
+tr:nth-last-child(2) :nth-child(1),
+tr:nth-last-child(1) :nth-child(1) {
+  background-color: transparent;
 }
